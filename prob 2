@@ -1,0 +1,6 @@
+from random import randint
+for i in range(0,10):
+    loto=[]
+    for j in range(0,5):
+        loto.extend([randint(1,36)])
+    print(loto)

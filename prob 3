@@ -1,0 +1,5 @@
+from random import randint
+n=randint(100,999)
+while (n%6!=0) or (n%8!=0):
+    n=randint(100,999)
+print(n)

@@ -1,0 +1,9 @@
+from random import randint
+a=randint(0,100)
+b=randint(0,100)
+print("Primul nr.=",a)
+print("Al doilea nr.=",b)
+print("Suma =",a+b)
+print("Diferenta 1=",a-b)
+print("Diferenta 2=",b-a)
+print("Produsul =",a*b)

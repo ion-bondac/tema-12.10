@@ -1,0 +1,25 @@
+from random import randint
+n=input("doriți sa alegi o tema(srieti(tema)) sau alegeti (random):")
+biologie=["În urma cărui tip de diviziune se obțin două celule-fiice cu garnitură diploidă?","Care reptila are inima tetracamerala?","Cum se numeste vertebra coloanei vetebrale ce se unește semimobil cu craniul?","Ce tip de oase au păsările?","Cum se numesc coastele ce nu se unesc cu osul stern?","Care este numele primului om care a folosit microscopul în scop biologic?","Ce organit al celului posedă numele de fabrica de energie?","Din ce este format peretele celular la ciuperci? ","Câți cromozomi are omul?","Care este probabilitatea ca copilul să moștenească ochi albaștri, dacă tatăl are ochi căprui (caracter homozigot), iar mama ochi albaștri (caracter homozigot)?"]
+geografie=["Care este cea mai adâncă fosă oceanică din lume?","Care este capitalastatului Burkina Fasso?","Care este statul din europa cu cea mai mică suprafață?","Care este al doilea cel mai lung tunel feroviar din lume?","Care este cel mai înalt deal din Moldova?","Cum se numește vârful montan cu altitudine maximă din România?","Care este cel mai mare megalopolis din lume?","Statul cu cel mai mare nivel de dezurbanizare?","Ce tip de minereu se extrage din peninsula Kola?","Care este râul din Europa cu cea mai mare lungime?"]
+matematica=["Cu ce egal derivata de x^2?","Care este restul împărțirii polinomului :5*x^4+3*x^2+2*x+5 la x-2?","Ceu ce este egală derivata de cosx?","Cu ce este egală ipotenuza uni triunghi dreptunghic cu o catetă de 4 cm și unghiul ce i se opune fiind de 30 grade?","Care este restul împărțirii polinomului :2*x^5+x^3+2*x+5*x la x-1?","Cu ce este egală ipotenuza uni triunghi dreptunghic cu o catetă de 6 cm și unghiul ce i se opune fiind de 60 grade?","Cât face 15% din 7645320?","Care este restul împărțirii polinomului :4*x^4+3*x^3+2*x^2+1 la x-5?","Cu ce este egală ipotenuza uni triunghi dreptunghic cu o catetă de 10 cm și unghiul ce i se opune fiind de 30 grade?","Cât fac 12% din 213425450?"]
+istorie=["Care este anul în care s-a încheiat războiul de independență al României?","Care este data când Moldova s-a unit cu România?","Care sunt anii de domnie ai lui Burebista?","Care este anul căderii Imperiului Roman?","La câți a venit la tron Ștefan Mușatin?","Numele generalului care a condus armata română în luptele de la Mărești, Mărășești și Oituz?","Care era țara care a condus-o regele Leonidas?","Cum se numea zeul suprem al dacilor?","Care este unul dintre primele imperii coloniale moderne?","Care anul în care Basarabia a fost cedată Imperului Rus, prin intermediul tratatului de la București?"]
+chimie=["Scrieți formula moleculară glucozei","Scrieți formula generală pentru alcani","Scrieți formula generală pentru alchene","Scrieți formula generală pentru alchine","Câți izomeri halogeno-derivați poate avea butanul?","Scrieți formula generală pentru Arene","Care este formula moleculară a toulenului?","Care este formula moleculară a fenolului?","Care este fomula moleculară a ribozei?","Cum se numește izotopul hidrogenului cu masa 2?"]
+teme=[biologie,geografie,matematica,istorie,chimie]
+tema=["biologie","geografie","matematica","istorie","chimie"]
+if n=="tema" or n=="Tema" or n=="TEMA":
+    print(tema)
+    n=input("dati o tema:")
+    if n=="geografie":
+        print(geografie[randint(0,9)])
+    if n=="biologie":
+        print(biologie[randint(0,9)])
+    if n=="chimie":
+        print(chimie[randint(0,9)])
+    if n=="istorie":
+        print(istorie[randint(0,9)])
+    if n=="matematica":
+        print(matematica[randint(0,9)])
+else:
+    m=teme[randint(0,4)]
+    print(m[randint(0,9)])
